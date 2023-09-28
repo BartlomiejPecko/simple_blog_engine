@@ -12,13 +12,6 @@ import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
-//Create a blog post: title, content, publish date
-//View blog post: title, content, average rating, list of reviews
-//Archive blog post
-//Read archive
-//Add blog post review: title, content, rating
-//Delete blog post review
-//Count average article rating
 @AllArgsConstructor
 @Getter
 @Setter
@@ -34,7 +27,7 @@ public class Review {
     private String content;
     private double rating;
     @ManyToOne
-    @JoinColumn(name = "doctor_id",referencedColumnName = "id")
+    @JoinColumn(name = "post_id",referencedColumnName = "id")
     private Post post;
 }
 

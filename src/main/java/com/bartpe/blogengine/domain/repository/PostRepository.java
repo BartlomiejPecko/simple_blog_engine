@@ -7,6 +7,5 @@ import com.bartpe.blogengine.domain.enity.Post;
 @Repository
 public interface PostRepository extends JpaRepository<Post,Long> {
     Post findAllById(long id);
-
-    void delete(long id);
+    void deleteById(Long id);
 }

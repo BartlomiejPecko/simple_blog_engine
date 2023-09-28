@@ -10,8 +10,7 @@ import com.bartpe.blogengine.domain.enity.Review;
 public interface ReviewRepository extends JpaRepository<Review,Long> {
 
     Review findAllById(long id);
-
-    void delete(long id);
-    @Query("select Sum(r.id) from Review r where r.id = :id")
+    void deleteById(Long id);
+    @Query("SELECT AVG(r.rating) FROM Review r WHERE r.post.id = :id")
     double countAverageReview(@Param("id") long id);
 }

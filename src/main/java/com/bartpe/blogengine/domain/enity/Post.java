@@ -15,13 +15,7 @@ import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
-//Create a blog post: title, content, publish date
-//View blog post: title, content, average rating, list of reviews
-//Archive blog post
-//Read archive
-//Add blog post review: title, content, rating
-//Delete blog post review
-//Count average article rating
+
 @Builder
 @AllArgsConstructor
 @Getter
@@ -35,6 +29,7 @@ public class Post {
     private Long id;
     private String title;
     private String content;
+    @Column(name = "average_rating")
     private double averageRating;
     //list rating
     @OneToMany(mappedBy = "post",cascade = CascadeType.ALL, fetch = FetchType.LAZY)

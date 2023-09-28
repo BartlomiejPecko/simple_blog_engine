@@ -2,6 +2,8 @@ package com.bartpe.blogengine.service;
 
 import java.util.List;
 
+import org.springframework.stereotype.Service;
+
 import com.bartpe.blogengine.domain.dto.PostDto;
 import com.bartpe.blogengine.domain.dto.ReviewDto;
 import com.bartpe.blogengine.domain.enity.Post;
@@ -15,8 +17,9 @@ import com.bartpe.blogengine.domain.repository.ReviewRepository;
 //Archive blog post
 //Read archive
 //Add blog post review: title, content, rating
-//Delete blog post review
-//Count average article rating
+//Delete blog post review ok
+//Count average article rating ok
+@Service
 public class BlogService {
 
     private final PostRepository postRepository;
@@ -53,13 +56,13 @@ public class BlogService {
         return reviewRepository.save(review);
     }
     public void deletePost(long id){//cascade
-        postRepository.delete(id);
+        postRepository.deleteById(id);
     }
     public void deleteReview(long id){
-        reviewRepository.delete(id);
+        reviewRepository.deleteById(id);
     }
     public double countAverage(long id){
-        return reviewRepository.countAverageRewiev(long id);
+        return reviewRepository.countAverageReview(id);
     }
 
 
