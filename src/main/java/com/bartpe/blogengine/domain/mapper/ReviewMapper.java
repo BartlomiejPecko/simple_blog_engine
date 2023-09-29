@@ -5,7 +5,7 @@ import java.util.List;
 import org.springframework.stereotype.Component;
 
 import com.bartpe.blogengine.domain.dto.ReviewDto;
-import com.bartpe.blogengine.domain.enity.Review;
+import com.bartpe.blogengine.domain.entity.Review;
 @Component
 public class ReviewMapper {
     public static Review toReview(ReviewDto reviewDto){

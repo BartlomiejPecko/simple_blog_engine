@@ -5,7 +5,7 @@ import java.util.List;
 import org.springframework.stereotype.Component;
 
 import com.bartpe.blogengine.domain.dto.PostDto;
-import com.bartpe.blogengine.domain.enity.Post;
+import com.bartpe.blogengine.domain.entity.Post;
 @Component
 public class PostMapper {
     public static Post toPost(PostDto postDto){

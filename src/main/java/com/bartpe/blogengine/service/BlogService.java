@@ -6,8 +6,8 @@ import org.springframework.stereotype.Service;
 
 import com.bartpe.blogengine.domain.dto.PostDto;
 import com.bartpe.blogengine.domain.dto.ReviewDto;
-import com.bartpe.blogengine.domain.enity.Post;
-import com.bartpe.blogengine.domain.enity.Review;
+import com.bartpe.blogengine.domain.entity.Post;
+import com.bartpe.blogengine.domain.entity.Review;
 import com.bartpe.blogengine.domain.mapper.PostMapper;
 import com.bartpe.blogengine.domain.mapper.ReviewMapper;
 import com.bartpe.blogengine.domain.repository.PostRepository;

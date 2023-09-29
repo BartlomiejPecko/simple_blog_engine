@@ -5,7 +5,7 @@ import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;
 import org.springframework.stereotype.Repository;
 
-import com.bartpe.blogengine.domain.enity.Review;
+import com.bartpe.blogengine.domain.entity.Review;
 @Repository
 public interface ReviewRepository extends JpaRepository<Review,Long> {
 

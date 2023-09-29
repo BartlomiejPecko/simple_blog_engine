@@ -1,14 +1,14 @@
 package com.bartpe.blogengine.domain.dto;
 
-import com.bartpe.blogengine.domain.enity.Post;
+import com.bartpe.blogengine.domain.entity.Post;
 
 import lombok.Builder;
 
 @Builder
-public record ReviewDto(Long id
-        , String title
-        , String content
-        , double rating
-        , Post post
+public record ReviewDto(Long id,
+          String title,
+          String content,
+          double rating,
+          Post post
 ) {
 }
